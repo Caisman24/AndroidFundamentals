@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textDimenSmall">16sp</dimen>
+    <dimen name="marginDimenLarge">40dp</dimen>
+    <dimen name="marginDimenMedium">25dp</dimen>
+    <dimen name="paddingDimenSmall">8dp</dimen>
+</resources>

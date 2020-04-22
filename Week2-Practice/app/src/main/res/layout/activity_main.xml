@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorBlue"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,7 +11,7 @@
         android:id="@+id/title_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPurple"
         android:gravity="center"
         android:padding="@dimen/paddingDimenSmall"
         android:layout_marginStart="@dimen/marginDimenLarge"
@@ -20,21 +19,19 @@
         android:layout_marginTop="@dimen/marginDimenLarge"
         android:text="@string/title"
         android:textSize="@dimen/textDimenSmall"
-        android:textStyle="bold|italic"
-        android:textColor="@color/colorGreen"/>
+        android:textStyle="bold|italic"/>
 
     <TextView
         android:id="@+id/title_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPurple"
         android:gravity="center"
         android:padding="@dimen/paddingDimenSmall"
         android:layout_margin="@dimen/marginDimenLarge"
         android:text="@string/title_register"
         android:textSize="@dimen/textDimenSmall"
-        android:textStyle="bold|italic"
-        android:textColor="@color/colorGreen"/>
+        android:textStyle="bold|italic"/>
 
     <ImageView
         android:id="@+id/image"
@@ -42,6 +39,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher_foreground"
         android:layout_gravity="center_horizontal"/>
+
     <Button
         android:id="@+id/next"
         android:layout_width="match_parent"
@@ -54,17 +52,18 @@
         android:id="@+id/email_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColorHint="@color/colorOrange"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="@dimen/marginDimenLarge"
+        android:layout_marginEnd="@dimen/marginDimenLarge"
         android:padding="@dimen/paddingDimenSmall"
-
-        android:hint="@string/email"
-        android:textColorHint="@color/colorGreen"
-        android:textColor="@color/colorAccent"/>
+        android:hint="@string/email" />
 
     <CheckBox
         android:id="@+id/acceptTerms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/marginDimenLarge"
+        android:layout_marginStart="@dimen/marginDimenLarge"
         android:text= "@string/accept_terms_and_conditions" />
 
     <Switch
@@ -80,7 +79,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:rating="3"
-        android:stepSize="1.5" />
+        android:layout_gravity="center_horizontal"
+        android:progressTint="@color/colorYellow"
+        android:stepSize="0.5" />
 
     <RadioGroup
         android:id="@+id/radio_group"
