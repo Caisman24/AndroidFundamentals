@@ -10,4 +10,5 @@
     <string name="notify">Notify me :)</string>
     <string name="radio_button2">NO</string>
     <string name="radio_button1">YES</string>
+    <string name="auto_backup">Auto backup</string>
 </resources>

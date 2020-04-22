@@ -26,7 +26,8 @@
         android:paddingTop="@dimen/paddingDimenSmall"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/textDimenSmall"
-        android:text="@string/text_view_orange" />
+        android:text="@string/text_view_orange"
+        tools:ignore="NestedWeights" />
 
     <TextView
         android:id="@+id/green_view"
@@ -62,14 +63,17 @@
         android:weightSum="3">
 
         <Button
+            android:id="@+id/left_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/first_button"
             android:background="@color/colorButton1"
             android:layout_margin="@dimen/marginDimenMedium"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -77,6 +81,7 @@
             android:src="@drawable/color_palette"/>
 
         <Button
+            android:id="@+id/right_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/second_button"
@@ -94,6 +99,7 @@
         android:gravity="center">
 
         <EditText
+            android:id="@+id/edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/textDimenSmall"
@@ -102,6 +108,7 @@
             android:hint="@string/edit_text"/>
 
         <EditText
+            android:id="@+id/edit_new_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/textDimenSmall"
@@ -120,19 +127,22 @@
         android:background="@color/colorButton1">
 
         <CheckBox
+            android:id="@+id/notification"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/textDimenSmall"
             android:layout_marginStart="@dimen/marginStartDimenSmall"
             android:layout_weight="1"
-            android:text="@string/notify"/>
+            android:text="@string/notify"
+            tools:ignore="NestedWeights" />
 
         <Switch
+            android:id="@+id/backup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/switchDimenSmall"
             android:layout_weight="1"
-            android:text="Auto backup"/>
+            android:text="@string/auto_backup"/>
     </LinearLayout>
 
     <LinearLayout
@@ -144,6 +154,7 @@
         android:background="@color/colorButton1">
 
         <RatingBar
+            android:id="@+id/rating_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:rating="4"
@@ -160,23 +171,24 @@
         android:background="@color/colorButton1">
 
         <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/marginStartDimenSmall">
 
             <RadioButton
+                android:id="@+id/radio_button_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text="@string/radio_button1"/>
 
             <RadioButton
+                android:id="@+id/radio_button_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:text="@string/radio_button2"/>
-
         </RadioGroup>
     </LinearLayout>
-
 </LinearLayout>
