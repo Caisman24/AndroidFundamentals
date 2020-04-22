@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textDimenSmall"> 22sp</dimen>
+    <dimen name="marginDimenMedium"> 10dp</dimen>
+    <dimen name="paddingDimenSmall"> 5dp</dimen>
+    <dimen name="marginStartDimenSmall">5dp</dimen>
+    <dimen name="switchDimenSmall">18sp</dimen>
+</resources>

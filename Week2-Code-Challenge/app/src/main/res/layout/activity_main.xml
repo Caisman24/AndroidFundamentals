@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="2"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/orange_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/paddingDimenSmall"
+        android:paddingTop="@dimen/paddingDimenSmall"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textDimenSmall"
+        android:text="@string/text_view_orange" />
+
+    <TextView
+        android:id="@+id/green_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/paddingDimenSmall"
+        android:paddingBottom="@dimen/paddingDimenSmall"
+        android:textSize="@dimen/textDimenSmall"
+        android:text="@string/text_view_green" />
+
+    <TextView
+        android:id="@+id/blue_view"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/paddingDimenSmall"
+        android:background="@color/colorBlue"
+        android:paddingBottom="@dimen/paddingDimenSmall"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textDimenSmall"
+        android:text="@string/text_view_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/first_button"
+            android:background="@color/colorButton1"
+            android:layout_margin="@dimen/marginDimenMedium"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/marginDimenMedium"
+            android:src="@drawable/color_palette"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/second_button"
+            android:layout_margin="@dimen/marginDimenMedium"
+            android:background="@color/colorButton2"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorEdit"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textDimenSmall"
+            android:layout_marginStart="@dimen/marginStartDimenSmall"
+            android:layout_marginEnd="@dimen/marginStartDimenSmall"
+            android:hint="@string/edit_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textDimenSmall"
+            android:layout_marginEnd="@dimen/marginStartDimenSmall"
+            android:layout_marginStart="@dimen/marginStartDimenSmall"
+            android:hint="@string/edit_new_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/paddingDimenSmall"
+        android:weightSum="2"
+        android:background="@color/colorButton1">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textDimenSmall"
+            android:layout_marginStart="@dimen/marginStartDimenSmall"
+            android:layout_weight="1"
+            android:text="@string/notify"/>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/switchDimenSmall"
+            android:layout_weight="1"
+            android:text="Auto backup"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@color/colorButton1">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4"
+            android:layout_marginStart="@dimen/marginStartDimenSmall"
+            style="?android:ratingBarStyleSmall"
+            android:progressTint="@color/colorStar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:background="@color/colorButton1">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStartDimenSmall">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/radio_button1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/radio_button2"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

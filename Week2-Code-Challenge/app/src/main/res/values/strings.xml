@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Android Developer Fundamentals</string>
+    <string name="text_view_orange">This is an orange TextView!</string>
+    <string name="text_view_green">This is a green TextView</string>
+    <string name="text_view_blue">This is a blue TextView</string>
+    <string name="first_button">This is a button</string>
+    <string name="second_button">THIS IS A GREEN BUTTON</string>
+    <string name="edit_text">This is an EditText</string>
+    <string name="edit_new_text">This is a new EditText</string>
+    <string name="notify">Notify me :)</string>
+    <string name="radio_button2">NO</string>
+    <string name="radio_button1">YES</string>
+</resources>
