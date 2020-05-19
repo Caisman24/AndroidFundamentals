@@ -4,4 +4,5 @@
     <dimen name="marginDimenLarge">40dp</dimen>
     <dimen name="marginDimenMedium">25dp</dimen>
     <dimen name="paddingDimenSmall">8dp</dimen>
+    <dimen name="textDimenBig">32sp</dimen>
 </resources>
